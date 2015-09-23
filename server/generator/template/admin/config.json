@@ -1,0 +1,55 @@
+{
+
+  "mkdirs": [
+    "app",
+    "app/components",
+    "app/shared",
+    "app/shared/directives",
+    "app/shared/resources",
+    "app/shared/services",
+
+
+    "assets",
+    "assets/bower_components",
+    "assets/fonts",
+    "assets/plugins",
+    "assets/stylesheets",
+    "bin",
+    "node_modules"
+  ],
+  "files" : [
+    {
+     "path" : "bin/www",
+      "params" : ["port"]
+    },
+
+    {
+      "path" : "package.json"
+    },
+    {
+      "path" : "app.js"
+    },
+
+    {
+      "path" : "assets/*"
+    },
+
+    {
+      "path" : "app/shared/directives/*"
+    },
+    {
+      "path" : "app/shared/resources/*"
+    },
+    {
+      "path" : "app/shared/services/*"
+    },
+    {
+      "path" : "app/shared/angular-locale_ka.js"
+    },
+    {
+      "path" : "app/shared/share.js"
+    }
+
+
+  ]
+}

@@ -1,0 +1,93 @@
+{
+
+  "mkdirs": [
+    "bin",
+    "config",
+    "controllers",
+    "helpers",
+    "models",
+    "node_modules",
+    "public",
+    "public/uploads",
+    "routes"
+  ],
+  "files" : [
+    {
+     "path" : "bin/www",
+      "params" : ["debugApi", "port"]
+    },
+
+
+
+    {
+      "path" : "config/index.js",
+      "params" : ["uploadServerPath", "databasePath", "databasePath", "databasePort", "databaseName", "jwt_secret"]
+    },
+    {
+      "path" : "config/mail.js",
+      "params" : ["mailgun_apiKey", "mailgun_domain", "mailgun_support", "mailgun_noreply", "mailgun_defaultFrom"]
+    },
+    {
+      "path" : "controllers/crudController.js",
+      "params" : ["debugApi"]
+    },
+    {
+      "path" : "controllers/tokenController.js",
+      "params" : ["debugApi"]
+    },
+    {
+      "path" : "controllers/userController.js",
+      "params" : ["debugApi", "USER_ACTIVATION_CALLBACK_URL", "USER_FORGOT_CALLBACK_URL"]
+    },
+
+
+
+    {
+      "path" : "helpers/index.js"
+    },
+    {
+      "path" : "helpers/response.js"
+    },
+
+
+
+    {
+      "path" : "models/const.js"
+    },
+    {
+      "path" : "models/user.js"
+    },
+
+
+    {
+      "path" : "public/favicon.ico"
+    },
+
+
+
+
+    {
+      "path" : "routes/crud.js"
+    },
+    {
+      "path" : "routes/index.js"
+    },
+    {
+      "path" : "routes/social-proxy.js",
+      "params" : ["getCredentials"]
+    },
+
+
+    {
+      "path" : "package.json"
+    },
+    {
+      "path" : "app.js",
+      "params" : ["debugApi"]
+    }
+
+
+
+
+  ]
+}
