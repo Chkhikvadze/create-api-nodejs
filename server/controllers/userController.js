@@ -1,7 +1,7 @@
 /// <reference path="../../typings/node/node.d.ts"/>
 'use strict';
 
-var debug = require('debug')('lingwing-api-userController');
+var debug = require('debug')('create-api-userController');
 var request = require('request');
 var crypto = require('crypto');
 var async = require('async');
