@@ -1,6 +1,6 @@
 'use strict';
 
-var debug = require('debug')('lingwing-api-tokenController');
+var debug = require('debug')('create-api-tokenController');
 var jwt = require('jwt-simple');
 var roles = require('../models/const.js').USER_ROLES;
 var User = require('../models/user.js');
@@ -9,7 +9,7 @@ var response = require('../helpers/response.js');
 
 function _generateToken(user) {
 	var token = jwt.encode({
-		iss: "lingwing-api", // the issuer of the claim
+		iss: "create-api", // the issuer of the claim
 		iat: _issuedAt(), // issued-at time
 		exp: _expiresIn(config.jwt_valid_days), // expiration time,
 		user_id: user.id
