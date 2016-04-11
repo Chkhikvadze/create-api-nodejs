@@ -1,6 +1,6 @@
 'use strict';
 
-var debug = require('debug')('lingwing-api-profileController');
+var debug = require('debug')('create-api-profileController');
 var response = require('../helpers/response.js');
 var copyFrom = require('../helpers').copyFrom;
 var User = require('../models/user.js');
