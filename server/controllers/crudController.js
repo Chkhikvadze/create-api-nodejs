@@ -3,7 +3,7 @@
 
 var response = require('../helpers/response.js');
 var config = require('../config/index.js');
-var debug = require('debug')('lingwing-api-crudController');
+var debug = require('debug')('create-api-crudController');
 
 module.exports = function (Model) {
     return {
